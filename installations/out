@@ -1,0 +1,2085 @@
+Downloading/unpacking h5py
+  Running setup.py egg_info for package h5py
+    /tmp/pip-build-ctataru5/h5py/setup.py:11: DeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+      try:
+    no previously-included directories found matching 'docs/_build'
+    no previously-included directories found matching 'docs_api/_build'
+    warning: no previously-included files matching '.DS_Store' found under directory '*'
+Requirement already satisfied (use --upgrade to upgrade): numpy>=1.6.1 in /home/ctataru5/.local/lib/python2.6/site-packages (from h5py)
+Downloading/unpacking six (from h5py)
+  Running setup.py egg_info for package six
+    /tmp/pip-build-ctataru5/six/setup.py:11: DeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+      "Programming Language :: Python :: 2",
+    no previously-included directories found matching 'documentation/_build'
+Installing collected packages: h5py, six
+  Running setup.py install for h5py
+    Autodetection skipped [libhdf5.so: cannot open shared object file: No such file or directory]
+    ********************************************************************************
+                           Summary of the h5py configuration
+    
+        Path to HDF5: None
+        HDF5 Version: '1.8.4'
+         MPI Enabled: False
+    Rebuild Required: False
+    
+    ********************************************************************************
+    Executing cythonize()
+    building 'h5py.defs' extension
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DH5_USE_16_API -I/tmp/pip-build-ctataru5/h5py/lzf -I/opt/local/include -I/usr/local/include -I/home/ctataru5/.local/lib/python2.6/site-packages/numpy/core/include -I/usr/include/python2.6 -c /tmp/pip-build-ctataru5/h5py/h5py/defs.c -o build/temp.linux-x86_64-2.6/tmp/pip-build-ctataru5/h5py/h5py/defs.o
+    In file included from /home/ctataru5/.local/lib/python2.6/site-packages/numpy/core/include/numpy/ndarraytypes.h:1777,
+                     from /home/ctataru5/.local/lib/python2.6/site-packages/numpy/core/include/numpy/ndarrayobject.h:18,
+                     from /home/ctataru5/.local/lib/python2.6/site-packages/numpy/core/include/numpy/arrayobject.h:4,
+                     from /tmp/pip-build-ctataru5/h5py/h5py/api_compat.h:26,
+                     from /tmp/pip-build-ctataru5/h5py/h5py/defs.c:303:
+    /home/ctataru5/.local/lib/python2.6/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:15:2: warning: #warning "Using deprecated NumPy API, disable it by " "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION"
+    In file included from /tmp/pip-build-ctataru5/h5py/h5py/defs.c:303:
+    /tmp/pip-build-ctataru5/h5py/h5py/api_compat.h:27:18: error: hdf5.h: No such file or directory
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:306:23: error: H5Cpublic.h: No such file or directory
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:307:21: error: hdf5_hl.h: No such file or directory
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:538: error: expected specifier-qualifier-list before ‘H5E_auto_t’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:772: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5open’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:884: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5close’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:996: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5get_libversion’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:1108: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Acreate’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:1220: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aopen_idx’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:1332: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aopen_name’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:1444: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aclose’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:1556: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Adelete’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:1668: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aread’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:1780: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Awrite’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:1892: error: expected ‘)’ before ‘__pyx_v_loc_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:2003: error: expected ‘)’ before ‘__pyx_v_attr_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:2115: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aget_space’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:2227: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aget_type’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:2339: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aiterate’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:2451: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Adelete_by_name’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:2563: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Adelete_by_idx’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:2675: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Acreate_by_name’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:2787: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aopen’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:2899: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aopen_by_name’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:3011: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aopen_by_idx’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:3123: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aexists_by_name’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:3235: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aexists’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:3347: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Arename’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:3459: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Arename_by_name’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:3571: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aget_info’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:3683: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aget_info_by_name’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:3795: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aget_info_by_idx’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:3907: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aiterate2’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:4019: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aget_storage_size’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:4131: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dcreate2’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:4243: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dcreate_anon’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:4355: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dopen’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:4467: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dopen2’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:4579: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dclose’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:4691: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dget_space’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:4803: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dget_space_status’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:4915: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dget_type’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:5027: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dget_create_plist’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:5139: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dget_access_plist’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:5251: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dget_offset’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:5363: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dget_storage_size’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:5475: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dread’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:5587: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dwrite’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:5699: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dextend’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:5811: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dfill’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:5923: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dvlen_get_buf_size’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:6035: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dvlen_reclaim’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:6147: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Diterate’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:6259: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dset_extent’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:6371: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Eset_auto’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:6483: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fcreate’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:6595: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fopen’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:6707: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fclose’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:6819: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fis_hdf5’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:6931: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fflush’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:7043: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Freopen’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:7155: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fmount’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:7267: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Funmount’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:7379: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_filesize’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:7491: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_create_plist’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:7603: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_access_plist’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:7715: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_freespace’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:7827: error: expected ‘)’ before ‘__pyx_v_obj_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:7939: error: expected ‘)’ before ‘__pyx_v_file_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:8050: error: expected ‘)’ before ‘__pyx_v_file_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:8161: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_vfd_handle’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:8273: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_intent’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:8385: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_mdc_config’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:8497: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_mdc_hit_rate’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:8609: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_mdc_size’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:8721: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Freset_mdc_hit_rate_stats’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:8833: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fset_mdc_config’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:8945: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gcreate’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:9057: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gopen’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:9169: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gclose’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:9281: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Glink2’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:9393: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gunlink’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:9505: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gmove2’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:9617: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gget_num_objs’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:9729: error: expected ‘)’ before ‘__pyx_v_loc_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:9840: error: expected ‘)’ before ‘__pyx_v_loc_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:9951: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Giterate’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:10063: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gget_objinfo’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:10175: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gget_linkval’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:10287: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gset_comment’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:10399: error: expected ‘)’ before ‘__pyx_v_loc_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:10510: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gcreate_anon’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:10622: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gcreate2’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:10734: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gopen2’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:10846: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gget_info’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:10958: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gget_info_by_name’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:11070: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gget_create_plist’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:11182: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Iget_type’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:11294: error: expected ‘)’ before ‘__pyx_v_obj_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:11406: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Iget_file_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:11518: error: expected ‘)’ before ‘__pyx_v_obj_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:11629: error: expected ‘)’ before ‘__pyx_v_obj_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:11740: error: expected ‘)’ before ‘__pyx_v_obj_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:11851: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Iis_valid’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:11963: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lmove’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:12075: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lcopy’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:12187: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lcreate_hard’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:12299: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lcreate_soft’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:12411: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Ldelete’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:12523: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Ldelete_by_idx’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:12635: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lget_val’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:12747: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lget_val_by_idx’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:12859: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lexists’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:12971: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lget_info’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:13083: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lget_info_by_idx’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:13195: error: expected ‘)’ before ‘__pyx_v_loc_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:13307: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Literate’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:13419: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Literate_by_name’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:13531: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lvisit’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:13643: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lvisit_by_name’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:13755: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lunpack_elink_val’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:13867: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lcreate_external’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:13979: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oopen’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:14091: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oopen_by_addr’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:14203: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oopen_by_idx’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:14315: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oget_info’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:14427: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oget_info_by_name’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:14539: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oget_info_by_idx’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:14651: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Olink’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:14763: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Ocopy’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:14875: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oincr_refcount’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:14987: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Odecr_refcount’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:15099: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oset_comment’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:15211: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oset_comment_by_name’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:15323: error: expected ‘)’ before ‘__pyx_v_obj_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:15435: error: expected ‘)’ before ‘__pyx_v_loc_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:15547: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Ovisit’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:15659: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Ovisit_by_name’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:15771: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oclose’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:15883: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pcreate’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:15995: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pcopy’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:16107: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_class’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:16219: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pclose’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:16331: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pequal’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:16443: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pclose_class’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:16555: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_version’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:16667: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_userblock’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:16779: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_userblock’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:16891: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_sizes’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:17003: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_sizes’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:17115: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_sym_k’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:17227: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_sym_k’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:17339: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_istore_k’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:17451: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_istore_k’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:17563: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fclose_degree’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:17675: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_fclose_degree’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:17787: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fapl_core’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:17899: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_fapl_core’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:18011: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fapl_family’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:18123: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_fapl_family’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:18235: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_family_offset’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:18347: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_family_offset’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:18459: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fapl_log’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:18571: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fapl_multi’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:18683: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_cache’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:18795: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_cache’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:18907: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fapl_sec2’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:19019: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fapl_stdio’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:19131: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_driver’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:19243: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_mdc_config’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:19355: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_mdc_config’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:19467: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_layout’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:19579: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_layout’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:19691: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_chunk’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:19803: error: expected ‘)’ before ‘__pyx_v_plist’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:19914: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_deflate’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:20026: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fill_value’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:20138: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_fill_value’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:20250: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pfill_value_defined’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:20362: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fill_time’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:20474: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_fill_time’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:20586: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_alloc_time’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:20698: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_alloc_time’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:20810: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_filter’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:20922: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pall_filters_avail’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:21034: error: expected ‘)’ before ‘__pyx_v_plist’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:21145: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_filter’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:21257: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_filter_by_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:21369: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pmodify_filter’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:21481: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Premove_filter’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:21593: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fletcher32’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:21705: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_shuffle’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:21817: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_szip’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:21929: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_scaleoffset’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:22041: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_edc_check’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:22153: error: expected ‘)’ before ‘__pyx_v_plist’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:22265: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_chunk_cache’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:22377: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_chunk_cache’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:22489: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_sieve_buf_size’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:22601: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_sieve_buf_size’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:22713: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_nlinks’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:22825: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_nlinks’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:22937: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_elink_prefix’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:23049: error: expected ‘)’ before ‘__pyx_v_plist_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:23161: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_elink_fapl’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:23273: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_elink_fapl’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:23385: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_create_intermediate_group’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:23497: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_create_intermediate_group’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:23609: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_copy_object’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:23721: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_copy_object’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:23833: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_char_encoding’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:23945: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_char_encoding’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:24057: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_obj_track_times’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:24169: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_obj_track_times’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:24281: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_local_heap_size_hint’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:24393: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_local_heap_size_hint’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:24505: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_link_phase_change’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:24617: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_link_phase_change’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:24729: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_est_link_info’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:24841: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_est_link_info’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:24953: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_link_creation_order’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:25065: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_link_creation_order’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:25177: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_libver_bounds’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:25289: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_libver_bounds’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:25401: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_alignment’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:25513: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_alignment’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:25625: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Rcreate’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:25737: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Rdereference’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:25849: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Rget_region’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:25961: error: expected ‘)’ before ‘__pyx_v_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:26073: error: expected ‘)’ before ‘__pyx_v_loc_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:26185: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Screate’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:26297: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Scopy’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:26409: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sclose’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:26521: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Screate_simple’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:26633: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sis_simple’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:26745: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Soffset_simple’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:26857: error: expected ‘)’ before ‘__pyx_v_space_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:26968: error: expected ‘)’ before ‘__pyx_v_space_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:27079: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_simple_extent_npoints’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:27191: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_simple_extent_type’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:27303: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sextent_copy’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:27415: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sset_extent_simple’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:27527: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sset_extent_none’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:27639: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_select_type’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:27751: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_select_npoints’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:27863: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_select_bounds’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:27975: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sselect_all’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:28087: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sselect_none’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:28199: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sselect_valid’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:28311: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_select_elem_npoints’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:28423: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_select_elem_pointlist’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:28535: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sselect_elements’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:28647: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_select_hyper_nblocks’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:28759: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_select_hyper_blocklist’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:28871: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sselect_hyperslab’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:28983: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sencode’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:29095: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sdecode’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:29207: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tcreate’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:29319: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Topen’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:29431: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tcommit’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:29543: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tcommitted’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:29655: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tcopy’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:29767: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tequal’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:29879: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tlock’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:29991: error: expected ‘)’ before ‘__pyx_v_type_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:30103: error: expected ‘)’ before ‘__pyx_v_type_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:30215: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_super’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:30327: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tdetect_class’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:30439: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tclose’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:30551: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_native_type’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:30663: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tcommit2’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:30775: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tdecode’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:30887: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tencode’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:30999: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tfind’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:31111: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tconvert’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:31223: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tregister’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:31335: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tunregister’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:31447: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_size’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:31559: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_order’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:31671: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_order’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:31783: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_precision’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:31895: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_precision’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:32007: error: expected ‘)’ before ‘__pyx_v_type_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:32118: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_offset’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:32230: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_pad’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:32342: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_pad’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:32454: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_sign’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:32566: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_sign’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:32678: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_fields’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:32790: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_fields’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:32902: error: expected ‘)’ before ‘__pyx_v_type_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:33014: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_ebias’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:33126: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_norm’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:33238: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_norm’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:33350: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_inpad’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:33462: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_inpad’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:33574: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_cset’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:33686: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_cset’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:33798: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_strpad’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:33910: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_strpad’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:34022: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tvlen_create’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:34134: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tis_variable_str’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:34246: error: expected ‘)’ before ‘__pyx_v_type_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:34357: error: expected ‘)’ before ‘__pyx_v_type_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:34469: error: expected ‘)’ before ‘__pyx_v_type_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:34581: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_member_type’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:34693: error: expected ‘)’ before ‘__pyx_v_type_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:34804: error: expected ‘)’ before ‘__pyx_v_type_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:34915: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tinsert’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:35027: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tpack’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:35139: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tenum_create’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:35251: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tenum_insert’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:35363: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tenum_nameof’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:35475: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tenum_valueof’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:35587: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_member_value’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:35699: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tarray_create’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:35811: error: expected ‘)’ before ‘__pyx_v_type_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:35922: error: expected ‘)’ before ‘__pyx_v_type_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:36033: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_tag’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:36145: error: expected ‘)’ before ‘__pyx_v_type_id’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:36257: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Zfilter_avail’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:36369: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Zget_filter_info’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:36481: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5DSattach_scale’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:36610: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5DSdetach_scale’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:36739: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5DSis_attached’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:36868: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5DSset_scale’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:36997: error: expected ‘)’ before ‘__pyx_v_did’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:37125: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5DSset_label’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:37254: error: expected ‘)’ before ‘__pyx_v_did’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:37383: error: expected ‘)’ before ‘__pyx_v_did’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:37512: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5DSis_scale’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:37641: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5DSiterate_scales’
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c: In function ‘initdefs’:
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38017: error: ‘__pyx_f_4h5py_4defs_H5open’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38017: error: (Each undeclared identifier is reported only once
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38017: error: for each function it appears in.)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38018: error: ‘__pyx_f_4h5py_4defs_H5close’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38019: error: ‘__pyx_f_4h5py_4defs_H5get_libversion’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38020: error: ‘__pyx_f_4h5py_4defs_H5Acreate’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38021: error: ‘__pyx_f_4h5py_4defs_H5Aopen_idx’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38022: error: ‘__pyx_f_4h5py_4defs_H5Aopen_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38023: error: ‘__pyx_f_4h5py_4defs_H5Aclose’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38024: error: ‘__pyx_f_4h5py_4defs_H5Adelete’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38025: error: ‘__pyx_f_4h5py_4defs_H5Aread’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38026: error: ‘__pyx_f_4h5py_4defs_H5Awrite’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38027: error: ‘__pyx_f_4h5py_4defs_H5Aget_num_attrs’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38028: error: ‘__pyx_f_4h5py_4defs_H5Aget_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38029: error: ‘__pyx_f_4h5py_4defs_H5Aget_space’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38030: error: ‘__pyx_f_4h5py_4defs_H5Aget_type’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38031: error: ‘__pyx_f_4h5py_4defs_H5Aiterate’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38032: error: ‘__pyx_f_4h5py_4defs_H5Adelete_by_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38033: error: ‘__pyx_f_4h5py_4defs_H5Adelete_by_idx’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38034: error: ‘__pyx_f_4h5py_4defs_H5Acreate_by_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38035: error: ‘__pyx_f_4h5py_4defs_H5Aopen’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38036: error: ‘__pyx_f_4h5py_4defs_H5Aopen_by_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38037: error: ‘__pyx_f_4h5py_4defs_H5Aopen_by_idx’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38038: error: ‘__pyx_f_4h5py_4defs_H5Aexists_by_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38039: error: ‘__pyx_f_4h5py_4defs_H5Aexists’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38040: error: ‘__pyx_f_4h5py_4defs_H5Arename’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38041: error: ‘__pyx_f_4h5py_4defs_H5Arename_by_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38042: error: ‘__pyx_f_4h5py_4defs_H5Aget_info’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38043: error: ‘__pyx_f_4h5py_4defs_H5Aget_info_by_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38044: error: ‘__pyx_f_4h5py_4defs_H5Aget_info_by_idx’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38045: error: ‘__pyx_f_4h5py_4defs_H5Aiterate2’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38046: error: ‘__pyx_f_4h5py_4defs_H5Aget_storage_size’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38047: error: ‘__pyx_f_4h5py_4defs_H5Dcreate2’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38048: error: ‘__pyx_f_4h5py_4defs_H5Dcreate_anon’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38049: error: ‘__pyx_f_4h5py_4defs_H5Dopen’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38050: error: ‘__pyx_f_4h5py_4defs_H5Dopen2’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38051: error: ‘__pyx_f_4h5py_4defs_H5Dclose’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38052: error: ‘__pyx_f_4h5py_4defs_H5Dget_space’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38053: error: ‘__pyx_f_4h5py_4defs_H5Dget_space_status’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38054: error: ‘__pyx_f_4h5py_4defs_H5Dget_type’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38055: error: ‘__pyx_f_4h5py_4defs_H5Dget_create_plist’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38056: error: ‘__pyx_f_4h5py_4defs_H5Dget_access_plist’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38057: error: ‘__pyx_f_4h5py_4defs_H5Dget_offset’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38058: error: ‘__pyx_f_4h5py_4defs_H5Dget_storage_size’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38059: error: ‘__pyx_f_4h5py_4defs_H5Dread’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38060: error: ‘__pyx_f_4h5py_4defs_H5Dwrite’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38061: error: ‘__pyx_f_4h5py_4defs_H5Dextend’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38062: error: ‘__pyx_f_4h5py_4defs_H5Dfill’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38063: error: ‘__pyx_f_4h5py_4defs_H5Dvlen_get_buf_size’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38064: error: ‘__pyx_f_4h5py_4defs_H5Dvlen_reclaim’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38065: error: ‘__pyx_f_4h5py_4defs_H5Diterate’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38066: error: ‘__pyx_f_4h5py_4defs_H5Dset_extent’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38067: error: ‘__pyx_f_4h5py_4defs_H5Eset_auto’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38068: error: ‘__pyx_f_4h5py_4defs_H5Fcreate’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38069: error: ‘__pyx_f_4h5py_4defs_H5Fopen’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38070: error: ‘__pyx_f_4h5py_4defs_H5Fclose’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38071: error: ‘__pyx_f_4h5py_4defs_H5Fis_hdf5’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38072: error: ‘__pyx_f_4h5py_4defs_H5Fflush’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38073: error: ‘__pyx_f_4h5py_4defs_H5Freopen’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38074: error: ‘__pyx_f_4h5py_4defs_H5Fmount’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38075: error: ‘__pyx_f_4h5py_4defs_H5Funmount’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38076: error: ‘__pyx_f_4h5py_4defs_H5Fget_filesize’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38077: error: ‘__pyx_f_4h5py_4defs_H5Fget_create_plist’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38078: error: ‘__pyx_f_4h5py_4defs_H5Fget_access_plist’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38079: error: ‘__pyx_f_4h5py_4defs_H5Fget_freespace’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38080: error: ‘__pyx_f_4h5py_4defs_H5Fget_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38081: error: ‘__pyx_f_4h5py_4defs_H5Fget_obj_count’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38082: error: ‘__pyx_f_4h5py_4defs_H5Fget_obj_ids’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38083: error: ‘__pyx_f_4h5py_4defs_H5Fget_vfd_handle’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38084: error: ‘__pyx_f_4h5py_4defs_H5Fget_intent’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38085: error: ‘__pyx_f_4h5py_4defs_H5Fget_mdc_config’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38086: error: ‘__pyx_f_4h5py_4defs_H5Fget_mdc_hit_rate’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38087: error: ‘__pyx_f_4h5py_4defs_H5Fget_mdc_size’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38088: error: ‘__pyx_f_4h5py_4defs_H5Freset_mdc_hit_rate_stats’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38089: error: ‘__pyx_f_4h5py_4defs_H5Fset_mdc_config’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38090: error: ‘__pyx_f_4h5py_4defs_H5Gcreate’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38091: error: ‘__pyx_f_4h5py_4defs_H5Gopen’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38092: error: ‘__pyx_f_4h5py_4defs_H5Gclose’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38093: error: ‘__pyx_f_4h5py_4defs_H5Glink2’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38094: error: ‘__pyx_f_4h5py_4defs_H5Gunlink’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38095: error: ‘__pyx_f_4h5py_4defs_H5Gmove2’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38096: error: ‘__pyx_f_4h5py_4defs_H5Gget_num_objs’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38097: error: ‘__pyx_f_4h5py_4defs_H5Gget_objname_by_idx’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38098: error: ‘__pyx_f_4h5py_4defs_H5Gget_objtype_by_idx’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38099: error: ‘__pyx_f_4h5py_4defs_H5Giterate’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38100: error: ‘__pyx_f_4h5py_4defs_H5Gget_objinfo’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38101: error: ‘__pyx_f_4h5py_4defs_H5Gget_linkval’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38102: error: ‘__pyx_f_4h5py_4defs_H5Gset_comment’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38103: error: ‘__pyx_f_4h5py_4defs_H5Gget_comment’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38104: error: ‘__pyx_f_4h5py_4defs_H5Gcreate_anon’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38105: error: ‘__pyx_f_4h5py_4defs_H5Gcreate2’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38106: error: ‘__pyx_f_4h5py_4defs_H5Gopen2’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38107: error: ‘__pyx_f_4h5py_4defs_H5Gget_info’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38108: error: ‘__pyx_f_4h5py_4defs_H5Gget_info_by_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38109: error: ‘__pyx_f_4h5py_4defs_H5Gget_create_plist’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38110: error: ‘__pyx_f_4h5py_4defs_H5Iget_type’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38111: error: ‘__pyx_f_4h5py_4defs_H5Iget_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38112: error: ‘__pyx_f_4h5py_4defs_H5Iget_file_id’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38113: error: ‘__pyx_f_4h5py_4defs_H5Idec_ref’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38114: error: ‘__pyx_f_4h5py_4defs_H5Iget_ref’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38115: error: ‘__pyx_f_4h5py_4defs_H5Iinc_ref’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38116: error: ‘__pyx_f_4h5py_4defs_H5Iis_valid’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38117: error: ‘__pyx_f_4h5py_4defs_H5Lmove’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38118: error: ‘__pyx_f_4h5py_4defs_H5Lcopy’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38119: error: ‘__pyx_f_4h5py_4defs_H5Lcreate_hard’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38120: error: ‘__pyx_f_4h5py_4defs_H5Lcreate_soft’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38121: error: ‘__pyx_f_4h5py_4defs_H5Ldelete’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38122: error: ‘__pyx_f_4h5py_4defs_H5Ldelete_by_idx’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38123: error: ‘__pyx_f_4h5py_4defs_H5Lget_val’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38124: error: ‘__pyx_f_4h5py_4defs_H5Lget_val_by_idx’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38125: error: ‘__pyx_f_4h5py_4defs_H5Lexists’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38126: error: ‘__pyx_f_4h5py_4defs_H5Lget_info’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38127: error: ‘__pyx_f_4h5py_4defs_H5Lget_info_by_idx’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38128: error: ‘__pyx_f_4h5py_4defs_H5Lget_name_by_idx’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38129: error: ‘__pyx_f_4h5py_4defs_H5Literate’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38130: error: ‘__pyx_f_4h5py_4defs_H5Literate_by_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38131: error: ‘__pyx_f_4h5py_4defs_H5Lvisit’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38132: error: ‘__pyx_f_4h5py_4defs_H5Lvisit_by_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38133: error: ‘__pyx_f_4h5py_4defs_H5Lunpack_elink_val’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38134: error: ‘__pyx_f_4h5py_4defs_H5Lcreate_external’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38135: error: ‘__pyx_f_4h5py_4defs_H5Oopen’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38136: error: ‘__pyx_f_4h5py_4defs_H5Oopen_by_addr’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38137: error: ‘__pyx_f_4h5py_4defs_H5Oopen_by_idx’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38138: error: ‘__pyx_f_4h5py_4defs_H5Oget_info’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38139: error: ‘__pyx_f_4h5py_4defs_H5Oget_info_by_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38140: error: ‘__pyx_f_4h5py_4defs_H5Oget_info_by_idx’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38141: error: ‘__pyx_f_4h5py_4defs_H5Olink’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38142: error: ‘__pyx_f_4h5py_4defs_H5Ocopy’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38143: error: ‘__pyx_f_4h5py_4defs_H5Oincr_refcount’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38144: error: ‘__pyx_f_4h5py_4defs_H5Odecr_refcount’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38145: error: ‘__pyx_f_4h5py_4defs_H5Oset_comment’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38146: error: ‘__pyx_f_4h5py_4defs_H5Oset_comment_by_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38147: error: ‘__pyx_f_4h5py_4defs_H5Oget_comment’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38148: error: ‘__pyx_f_4h5py_4defs_H5Oget_comment_by_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38149: error: ‘__pyx_f_4h5py_4defs_H5Ovisit’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38150: error: ‘__pyx_f_4h5py_4defs_H5Ovisit_by_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38151: error: ‘__pyx_f_4h5py_4defs_H5Oclose’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38152: error: ‘__pyx_f_4h5py_4defs_H5Pcreate’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38153: error: ‘__pyx_f_4h5py_4defs_H5Pcopy’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38154: error: ‘__pyx_f_4h5py_4defs_H5Pget_class’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38155: error: ‘__pyx_f_4h5py_4defs_H5Pclose’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38156: error: ‘__pyx_f_4h5py_4defs_H5Pequal’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38157: error: ‘__pyx_f_4h5py_4defs_H5Pclose_class’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38158: error: ‘__pyx_f_4h5py_4defs_H5Pget_version’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38159: error: ‘__pyx_f_4h5py_4defs_H5Pset_userblock’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38160: error: ‘__pyx_f_4h5py_4defs_H5Pget_userblock’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38161: error: ‘__pyx_f_4h5py_4defs_H5Pset_sizes’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38162: error: ‘__pyx_f_4h5py_4defs_H5Pget_sizes’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38163: error: ‘__pyx_f_4h5py_4defs_H5Pset_sym_k’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38164: error: ‘__pyx_f_4h5py_4defs_H5Pget_sym_k’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38165: error: ‘__pyx_f_4h5py_4defs_H5Pset_istore_k’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38166: error: ‘__pyx_f_4h5py_4defs_H5Pget_istore_k’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38167: error: ‘__pyx_f_4h5py_4defs_H5Pset_fclose_degree’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38168: error: ‘__pyx_f_4h5py_4defs_H5Pget_fclose_degree’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38169: error: ‘__pyx_f_4h5py_4defs_H5Pset_fapl_core’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38170: error: ‘__pyx_f_4h5py_4defs_H5Pget_fapl_core’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38171: error: ‘__pyx_f_4h5py_4defs_H5Pset_fapl_family’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38172: error: ‘__pyx_f_4h5py_4defs_H5Pget_fapl_family’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38173: error: ‘__pyx_f_4h5py_4defs_H5Pset_family_offset’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38174: error: ‘__pyx_f_4h5py_4defs_H5Pget_family_offset’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38175: error: ‘__pyx_f_4h5py_4defs_H5Pset_fapl_log’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38176: error: ‘__pyx_f_4h5py_4defs_H5Pset_fapl_multi’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38177: error: ‘__pyx_f_4h5py_4defs_H5Pset_cache’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38178: error: ‘__pyx_f_4h5py_4defs_H5Pget_cache’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38179: error: ‘__pyx_f_4h5py_4defs_H5Pset_fapl_sec2’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38180: error: ‘__pyx_f_4h5py_4defs_H5Pset_fapl_stdio’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38181: error: ‘__pyx_f_4h5py_4defs_H5Pget_driver’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38182: error: ‘__pyx_f_4h5py_4defs_H5Pget_mdc_config’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38183: error: ‘__pyx_f_4h5py_4defs_H5Pset_mdc_config’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38184: error: ‘__pyx_f_4h5py_4defs_H5Pset_layout’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38185: error: ‘__pyx_f_4h5py_4defs_H5Pget_layout’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38186: error: ‘__pyx_f_4h5py_4defs_H5Pset_chunk’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38187: error: ‘__pyx_f_4h5py_4defs_H5Pget_chunk’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38188: error: ‘__pyx_f_4h5py_4defs_H5Pset_deflate’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38189: error: ‘__pyx_f_4h5py_4defs_H5Pset_fill_value’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38190: error: ‘__pyx_f_4h5py_4defs_H5Pget_fill_value’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38191: error: ‘__pyx_f_4h5py_4defs_H5Pfill_value_defined’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38192: error: ‘__pyx_f_4h5py_4defs_H5Pset_fill_time’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38193: error: ‘__pyx_f_4h5py_4defs_H5Pget_fill_time’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38194: error: ‘__pyx_f_4h5py_4defs_H5Pset_alloc_time’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38195: error: ‘__pyx_f_4h5py_4defs_H5Pget_alloc_time’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38196: error: ‘__pyx_f_4h5py_4defs_H5Pset_filter’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38197: error: ‘__pyx_f_4h5py_4defs_H5Pall_filters_avail’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38198: error: ‘__pyx_f_4h5py_4defs_H5Pget_nfilters’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38199: error: ‘__pyx_f_4h5py_4defs_H5Pget_filter’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38200: error: ‘__pyx_f_4h5py_4defs_H5Pget_filter_by_id’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38201: error: ‘__pyx_f_4h5py_4defs_H5Pmodify_filter’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38202: error: ‘__pyx_f_4h5py_4defs_H5Premove_filter’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38203: error: ‘__pyx_f_4h5py_4defs_H5Pset_fletcher32’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38204: error: ‘__pyx_f_4h5py_4defs_H5Pset_shuffle’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38205: error: ‘__pyx_f_4h5py_4defs_H5Pset_szip’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38206: error: ‘__pyx_f_4h5py_4defs_H5Pset_scaleoffset’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38207: error: ‘__pyx_f_4h5py_4defs_H5Pset_edc_check’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38208: error: ‘__pyx_f_4h5py_4defs_H5Pget_edc_check’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38209: error: ‘__pyx_f_4h5py_4defs_H5Pset_chunk_cache’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38210: error: ‘__pyx_f_4h5py_4defs_H5Pget_chunk_cache’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38211: error: ‘__pyx_f_4h5py_4defs_H5Pset_sieve_buf_size’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38212: error: ‘__pyx_f_4h5py_4defs_H5Pget_sieve_buf_size’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38213: error: ‘__pyx_f_4h5py_4defs_H5Pset_nlinks’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38214: error: ‘__pyx_f_4h5py_4defs_H5Pget_nlinks’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38215: error: ‘__pyx_f_4h5py_4defs_H5Pset_elink_prefix’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38216: error: ‘__pyx_f_4h5py_4defs_H5Pget_elink_prefix’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38217: error: ‘__pyx_f_4h5py_4defs_H5Pget_elink_fapl’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38218: error: ‘__pyx_f_4h5py_4defs_H5Pset_elink_fapl’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38219: error: ‘__pyx_f_4h5py_4defs_H5Pset_create_intermediate_group’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38220: error: ‘__pyx_f_4h5py_4defs_H5Pget_create_intermediate_group’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38221: error: ‘__pyx_f_4h5py_4defs_H5Pset_copy_object’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38222: error: ‘__pyx_f_4h5py_4defs_H5Pget_copy_object’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38223: error: ‘__pyx_f_4h5py_4defs_H5Pset_char_encoding’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38224: error: ‘__pyx_f_4h5py_4defs_H5Pget_char_encoding’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38225: error: ‘__pyx_f_4h5py_4defs_H5Pset_obj_track_times’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38226: error: ‘__pyx_f_4h5py_4defs_H5Pget_obj_track_times’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38227: error: ‘__pyx_f_4h5py_4defs_H5Pset_local_heap_size_hint’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38228: error: ‘__pyx_f_4h5py_4defs_H5Pget_local_heap_size_hint’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38229: error: ‘__pyx_f_4h5py_4defs_H5Pset_link_phase_change’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38230: error: ‘__pyx_f_4h5py_4defs_H5Pget_link_phase_change’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38231: error: ‘__pyx_f_4h5py_4defs_H5Pset_est_link_info’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38232: error: ‘__pyx_f_4h5py_4defs_H5Pget_est_link_info’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38233: error: ‘__pyx_f_4h5py_4defs_H5Pset_link_creation_order’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38234: error: ‘__pyx_f_4h5py_4defs_H5Pget_link_creation_order’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38235: error: ‘__pyx_f_4h5py_4defs_H5Pset_libver_bounds’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38236: error: ‘__pyx_f_4h5py_4defs_H5Pget_libver_bounds’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38237: error: ‘__pyx_f_4h5py_4defs_H5Pset_alignment’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38238: error: ‘__pyx_f_4h5py_4defs_H5Pget_alignment’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38239: error: ‘__pyx_f_4h5py_4defs_H5Rcreate’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38240: error: ‘__pyx_f_4h5py_4defs_H5Rdereference’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38241: error: ‘__pyx_f_4h5py_4defs_H5Rget_region’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38242: error: ‘__pyx_f_4h5py_4defs_H5Rget_obj_type’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38243: error: ‘__pyx_f_4h5py_4defs_H5Rget_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38244: error: ‘__pyx_f_4h5py_4defs_H5Screate’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38245: error: ‘__pyx_f_4h5py_4defs_H5Scopy’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38246: error: ‘__pyx_f_4h5py_4defs_H5Sclose’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38247: error: ‘__pyx_f_4h5py_4defs_H5Screate_simple’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38248: error: ‘__pyx_f_4h5py_4defs_H5Sis_simple’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38249: error: ‘__pyx_f_4h5py_4defs_H5Soffset_simple’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38250: error: ‘__pyx_f_4h5py_4defs_H5Sget_simple_extent_ndims’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38251: error: ‘__pyx_f_4h5py_4defs_H5Sget_simple_extent_dims’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38252: error: ‘__pyx_f_4h5py_4defs_H5Sget_simple_extent_npoints’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38253: error: ‘__pyx_f_4h5py_4defs_H5Sget_simple_extent_type’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38254: error: ‘__pyx_f_4h5py_4defs_H5Sextent_copy’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38255: error: ‘__pyx_f_4h5py_4defs_H5Sset_extent_simple’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38256: error: ‘__pyx_f_4h5py_4defs_H5Sset_extent_none’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38257: error: ‘__pyx_f_4h5py_4defs_H5Sget_select_type’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38258: error: ‘__pyx_f_4h5py_4defs_H5Sget_select_npoints’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38259: error: ‘__pyx_f_4h5py_4defs_H5Sget_select_bounds’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38260: error: ‘__pyx_f_4h5py_4defs_H5Sselect_all’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38261: error: ‘__pyx_f_4h5py_4defs_H5Sselect_none’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38262: error: ‘__pyx_f_4h5py_4defs_H5Sselect_valid’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38263: error: ‘__pyx_f_4h5py_4defs_H5Sget_select_elem_npoints’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38264: error: ‘__pyx_f_4h5py_4defs_H5Sget_select_elem_pointlist’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38265: error: ‘__pyx_f_4h5py_4defs_H5Sselect_elements’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38266: error: ‘__pyx_f_4h5py_4defs_H5Sget_select_hyper_nblocks’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38267: error: ‘__pyx_f_4h5py_4defs_H5Sget_select_hyper_blocklist’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38268: error: ‘__pyx_f_4h5py_4defs_H5Sselect_hyperslab’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38269: error: ‘__pyx_f_4h5py_4defs_H5Sencode’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38270: error: ‘__pyx_f_4h5py_4defs_H5Sdecode’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38271: error: ‘__pyx_f_4h5py_4defs_H5Tcreate’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38272: error: ‘__pyx_f_4h5py_4defs_H5Topen’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38273: error: ‘__pyx_f_4h5py_4defs_H5Tcommit’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38274: error: ‘__pyx_f_4h5py_4defs_H5Tcommitted’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38275: error: ‘__pyx_f_4h5py_4defs_H5Tcopy’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38276: error: ‘__pyx_f_4h5py_4defs_H5Tequal’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38277: error: ‘__pyx_f_4h5py_4defs_H5Tlock’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38278: error: ‘__pyx_f_4h5py_4defs_H5Tget_class’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38279: error: ‘__pyx_f_4h5py_4defs_H5Tget_size’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38280: error: ‘__pyx_f_4h5py_4defs_H5Tget_super’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38281: error: ‘__pyx_f_4h5py_4defs_H5Tdetect_class’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38282: error: ‘__pyx_f_4h5py_4defs_H5Tclose’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38283: error: ‘__pyx_f_4h5py_4defs_H5Tget_native_type’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38284: error: ‘__pyx_f_4h5py_4defs_H5Tcommit2’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38285: error: ‘__pyx_f_4h5py_4defs_H5Tdecode’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38286: error: ‘__pyx_f_4h5py_4defs_H5Tencode’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38287: error: ‘__pyx_f_4h5py_4defs_H5Tfind’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38288: error: ‘__pyx_f_4h5py_4defs_H5Tconvert’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38289: error: ‘__pyx_f_4h5py_4defs_H5Tregister’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38290: error: ‘__pyx_f_4h5py_4defs_H5Tunregister’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38291: error: ‘__pyx_f_4h5py_4defs_H5Tset_size’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38292: error: ‘__pyx_f_4h5py_4defs_H5Tget_order’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38293: error: ‘__pyx_f_4h5py_4defs_H5Tset_order’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38294: error: ‘__pyx_f_4h5py_4defs_H5Tget_precision’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38295: error: ‘__pyx_f_4h5py_4defs_H5Tset_precision’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38296: error: ‘__pyx_f_4h5py_4defs_H5Tget_offset’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38297: error: ‘__pyx_f_4h5py_4defs_H5Tset_offset’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38298: error: ‘__pyx_f_4h5py_4defs_H5Tget_pad’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38299: error: ‘__pyx_f_4h5py_4defs_H5Tset_pad’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38300: error: ‘__pyx_f_4h5py_4defs_H5Tget_sign’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38301: error: ‘__pyx_f_4h5py_4defs_H5Tset_sign’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38302: error: ‘__pyx_f_4h5py_4defs_H5Tget_fields’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38303: error: ‘__pyx_f_4h5py_4defs_H5Tset_fields’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38304: error: ‘__pyx_f_4h5py_4defs_H5Tget_ebias’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38305: error: ‘__pyx_f_4h5py_4defs_H5Tset_ebias’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38306: error: ‘__pyx_f_4h5py_4defs_H5Tget_norm’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38307: error: ‘__pyx_f_4h5py_4defs_H5Tset_norm’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38308: error: ‘__pyx_f_4h5py_4defs_H5Tget_inpad’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38309: error: ‘__pyx_f_4h5py_4defs_H5Tset_inpad’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38310: error: ‘__pyx_f_4h5py_4defs_H5Tget_cset’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38311: error: ‘__pyx_f_4h5py_4defs_H5Tset_cset’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38312: error: ‘__pyx_f_4h5py_4defs_H5Tget_strpad’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38313: error: ‘__pyx_f_4h5py_4defs_H5Tset_strpad’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38314: error: ‘__pyx_f_4h5py_4defs_H5Tvlen_create’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38315: error: ‘__pyx_f_4h5py_4defs_H5Tis_variable_str’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38316: error: ‘__pyx_f_4h5py_4defs_H5Tget_nmembers’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38317: error: ‘__pyx_f_4h5py_4defs_H5Tget_member_class’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38318: error: ‘__pyx_f_4h5py_4defs_H5Tget_member_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38319: error: ‘__pyx_f_4h5py_4defs_H5Tget_member_type’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38320: error: ‘__pyx_f_4h5py_4defs_H5Tget_member_offset’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38321: error: ‘__pyx_f_4h5py_4defs_H5Tget_member_index’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38322: error: ‘__pyx_f_4h5py_4defs_H5Tinsert’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38323: error: ‘__pyx_f_4h5py_4defs_H5Tpack’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38324: error: ‘__pyx_f_4h5py_4defs_H5Tenum_create’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38325: error: ‘__pyx_f_4h5py_4defs_H5Tenum_insert’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38326: error: ‘__pyx_f_4h5py_4defs_H5Tenum_nameof’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38327: error: ‘__pyx_f_4h5py_4defs_H5Tenum_valueof’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38328: error: ‘__pyx_f_4h5py_4defs_H5Tget_member_value’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38329: error: ‘__pyx_f_4h5py_4defs_H5Tarray_create’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38330: error: ‘__pyx_f_4h5py_4defs_H5Tget_array_ndims’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38331: error: ‘__pyx_f_4h5py_4defs_H5Tget_array_dims’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38332: error: ‘__pyx_f_4h5py_4defs_H5Tset_tag’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38333: error: ‘__pyx_f_4h5py_4defs_H5Tget_tag’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38334: error: ‘__pyx_f_4h5py_4defs_H5Zfilter_avail’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38335: error: ‘__pyx_f_4h5py_4defs_H5Zget_filter_info’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38336: error: ‘__pyx_f_4h5py_4defs_H5DSattach_scale’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38337: error: ‘__pyx_f_4h5py_4defs_H5DSdetach_scale’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38338: error: ‘__pyx_f_4h5py_4defs_H5DSis_attached’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38339: error: ‘__pyx_f_4h5py_4defs_H5DSset_scale’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38340: error: ‘__pyx_f_4h5py_4defs_H5DSget_num_scales’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38341: error: ‘__pyx_f_4h5py_4defs_H5DSset_label’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38342: error: ‘__pyx_f_4h5py_4defs_H5DSget_label’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38343: error: ‘__pyx_f_4h5py_4defs_H5DSget_scale_name’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38344: error: ‘__pyx_f_4h5py_4defs_H5DSis_scale’ undeclared (first use in this function)
+    /tmp/pip-build-ctataru5/h5py/h5py/defs.c:38345: error: ‘__pyx_f_4h5py_4defs_H5DSiterate_scales’ undeclared (first use in this function)
+    error: command 'gcc' failed with exit status 1
+    Complete output from command /usr/bin/python -c "import setuptools;__file__='/tmp/pip-build-ctataru5/h5py/setup.py';exec(compile(open(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-4eDFZj-record/install-record.txt --single-version-externally-managed --user:
+    running install
+
+running build
+
+running build_py
+
+running build_ext
+
+Autodetection skipped [libhdf5.so: cannot open shared object file: No such file or directory]
+
+********************************************************************************
+
+                       Summary of the h5py configuration
+
+
+
+    Path to HDF5: None
+
+    HDF5 Version: '1.8.4'
+
+     MPI Enabled: False
+
+Rebuild Required: False
+
+
+
+********************************************************************************
+
+Executing cythonize()
+
+building 'h5py.defs' extension
+
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DH5_USE_16_API -I/tmp/pip-build-ctataru5/h5py/lzf -I/opt/local/include -I/usr/local/include -I/home/ctataru5/.local/lib/python2.6/site-packages/numpy/core/include -I/usr/include/python2.6 -c /tmp/pip-build-ctataru5/h5py/h5py/defs.c -o build/temp.linux-x86_64-2.6/tmp/pip-build-ctataru5/h5py/h5py/defs.o
+
+In file included from /home/ctataru5/.local/lib/python2.6/site-packages/numpy/core/include/numpy/ndarraytypes.h:1777,
+
+                 from /home/ctataru5/.local/lib/python2.6/site-packages/numpy/core/include/numpy/ndarrayobject.h:18,
+
+                 from /home/ctataru5/.local/lib/python2.6/site-packages/numpy/core/include/numpy/arrayobject.h:4,
+
+                 from /tmp/pip-build-ctataru5/h5py/h5py/api_compat.h:26,
+
+                 from /tmp/pip-build-ctataru5/h5py/h5py/defs.c:303:
+
+/home/ctataru5/.local/lib/python2.6/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:15:2: warning: #warning "Using deprecated NumPy API, disable it by " "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION"
+
+In file included from /tmp/pip-build-ctataru5/h5py/h5py/defs.c:303:
+
+/tmp/pip-build-ctataru5/h5py/h5py/api_compat.h:27:18: error: hdf5.h: No such file or directory
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:306:23: error: H5Cpublic.h: No such file or directory
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:307:21: error: hdf5_hl.h: No such file or directory
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:538: error: expected specifier-qualifier-list before ‘H5E_auto_t’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:772: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5open’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:884: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5close’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:996: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5get_libversion’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:1108: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Acreate’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:1220: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aopen_idx’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:1332: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aopen_name’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:1444: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aclose’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:1556: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Adelete’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:1668: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aread’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:1780: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Awrite’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:1892: error: expected ‘)’ before ‘__pyx_v_loc_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:2003: error: expected ‘)’ before ‘__pyx_v_attr_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:2115: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aget_space’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:2227: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aget_type’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:2339: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aiterate’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:2451: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Adelete_by_name’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:2563: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Adelete_by_idx’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:2675: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Acreate_by_name’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:2787: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aopen’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:2899: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aopen_by_name’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:3011: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aopen_by_idx’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:3123: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aexists_by_name’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:3235: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aexists’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:3347: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Arename’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:3459: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Arename_by_name’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:3571: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aget_info’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:3683: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aget_info_by_name’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:3795: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aget_info_by_idx’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:3907: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aiterate2’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:4019: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Aget_storage_size’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:4131: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dcreate2’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:4243: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dcreate_anon’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:4355: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dopen’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:4467: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dopen2’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:4579: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dclose’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:4691: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dget_space’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:4803: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dget_space_status’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:4915: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dget_type’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:5027: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dget_create_plist’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:5139: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dget_access_plist’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:5251: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dget_offset’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:5363: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dget_storage_size’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:5475: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dread’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:5587: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dwrite’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:5699: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dextend’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:5811: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dfill’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:5923: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dvlen_get_buf_size’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:6035: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dvlen_reclaim’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:6147: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Diterate’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:6259: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Dset_extent’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:6371: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Eset_auto’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:6483: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fcreate’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:6595: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fopen’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:6707: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fclose’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:6819: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fis_hdf5’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:6931: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fflush’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:7043: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Freopen’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:7155: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fmount’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:7267: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Funmount’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:7379: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_filesize’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:7491: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_create_plist’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:7603: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_access_plist’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:7715: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_freespace’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:7827: error: expected ‘)’ before ‘__pyx_v_obj_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:7939: error: expected ‘)’ before ‘__pyx_v_file_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:8050: error: expected ‘)’ before ‘__pyx_v_file_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:8161: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_vfd_handle’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:8273: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_intent’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:8385: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_mdc_config’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:8497: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_mdc_hit_rate’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:8609: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fget_mdc_size’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:8721: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Freset_mdc_hit_rate_stats’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:8833: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Fset_mdc_config’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:8945: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gcreate’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:9057: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gopen’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:9169: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gclose’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:9281: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Glink2’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:9393: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gunlink’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:9505: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gmove2’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:9617: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gget_num_objs’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:9729: error: expected ‘)’ before ‘__pyx_v_loc_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:9840: error: expected ‘)’ before ‘__pyx_v_loc_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:9951: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Giterate’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:10063: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gget_objinfo’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:10175: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gget_linkval’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:10287: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gset_comment’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:10399: error: expected ‘)’ before ‘__pyx_v_loc_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:10510: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gcreate_anon’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:10622: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gcreate2’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:10734: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gopen2’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:10846: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gget_info’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:10958: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gget_info_by_name’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:11070: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Gget_create_plist’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:11182: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Iget_type’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:11294: error: expected ‘)’ before ‘__pyx_v_obj_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:11406: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Iget_file_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:11518: error: expected ‘)’ before ‘__pyx_v_obj_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:11629: error: expected ‘)’ before ‘__pyx_v_obj_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:11740: error: expected ‘)’ before ‘__pyx_v_obj_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:11851: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Iis_valid’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:11963: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lmove’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:12075: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lcopy’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:12187: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lcreate_hard’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:12299: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lcreate_soft’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:12411: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Ldelete’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:12523: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Ldelete_by_idx’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:12635: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lget_val’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:12747: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lget_val_by_idx’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:12859: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lexists’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:12971: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lget_info’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:13083: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lget_info_by_idx’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:13195: error: expected ‘)’ before ‘__pyx_v_loc_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:13307: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Literate’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:13419: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Literate_by_name’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:13531: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lvisit’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:13643: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lvisit_by_name’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:13755: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lunpack_elink_val’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:13867: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Lcreate_external’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:13979: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oopen’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:14091: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oopen_by_addr’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:14203: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oopen_by_idx’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:14315: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oget_info’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:14427: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oget_info_by_name’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:14539: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oget_info_by_idx’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:14651: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Olink’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:14763: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Ocopy’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:14875: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oincr_refcount’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:14987: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Odecr_refcount’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:15099: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oset_comment’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:15211: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oset_comment_by_name’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:15323: error: expected ‘)’ before ‘__pyx_v_obj_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:15435: error: expected ‘)’ before ‘__pyx_v_loc_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:15547: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Ovisit’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:15659: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Ovisit_by_name’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:15771: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Oclose’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:15883: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pcreate’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:15995: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pcopy’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:16107: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_class’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:16219: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pclose’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:16331: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pequal’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:16443: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pclose_class’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:16555: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_version’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:16667: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_userblock’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:16779: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_userblock’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:16891: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_sizes’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:17003: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_sizes’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:17115: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_sym_k’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:17227: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_sym_k’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:17339: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_istore_k’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:17451: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_istore_k’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:17563: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fclose_degree’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:17675: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_fclose_degree’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:17787: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fapl_core’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:17899: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_fapl_core’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:18011: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fapl_family’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:18123: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_fapl_family’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:18235: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_family_offset’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:18347: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_family_offset’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:18459: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fapl_log’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:18571: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fapl_multi’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:18683: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_cache’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:18795: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_cache’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:18907: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fapl_sec2’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:19019: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fapl_stdio’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:19131: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_driver’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:19243: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_mdc_config’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:19355: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_mdc_config’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:19467: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_layout’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:19579: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_layout’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:19691: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_chunk’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:19803: error: expected ‘)’ before ‘__pyx_v_plist’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:19914: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_deflate’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:20026: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fill_value’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:20138: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_fill_value’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:20250: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pfill_value_defined’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:20362: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fill_time’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:20474: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_fill_time’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:20586: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_alloc_time’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:20698: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_alloc_time’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:20810: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_filter’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:20922: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pall_filters_avail’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:21034: error: expected ‘)’ before ‘__pyx_v_plist’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:21145: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_filter’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:21257: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_filter_by_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:21369: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pmodify_filter’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:21481: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Premove_filter’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:21593: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_fletcher32’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:21705: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_shuffle’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:21817: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_szip’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:21929: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_scaleoffset’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:22041: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_edc_check’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:22153: error: expected ‘)’ before ‘__pyx_v_plist’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:22265: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_chunk_cache’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:22377: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_chunk_cache’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:22489: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_sieve_buf_size’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:22601: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_sieve_buf_size’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:22713: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_nlinks’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:22825: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_nlinks’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:22937: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_elink_prefix’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:23049: error: expected ‘)’ before ‘__pyx_v_plist_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:23161: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_elink_fapl’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:23273: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_elink_fapl’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:23385: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_create_intermediate_group’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:23497: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_create_intermediate_group’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:23609: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_copy_object’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:23721: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_copy_object’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:23833: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_char_encoding’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:23945: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_char_encoding’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:24057: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_obj_track_times’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:24169: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_obj_track_times’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:24281: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_local_heap_size_hint’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:24393: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_local_heap_size_hint’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:24505: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_link_phase_change’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:24617: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_link_phase_change’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:24729: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_est_link_info’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:24841: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_est_link_info’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:24953: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_link_creation_order’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:25065: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_link_creation_order’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:25177: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_libver_bounds’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:25289: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_libver_bounds’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:25401: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pset_alignment’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:25513: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Pget_alignment’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:25625: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Rcreate’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:25737: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Rdereference’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:25849: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Rget_region’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:25961: error: expected ‘)’ before ‘__pyx_v_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:26073: error: expected ‘)’ before ‘__pyx_v_loc_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:26185: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Screate’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:26297: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Scopy’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:26409: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sclose’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:26521: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Screate_simple’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:26633: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sis_simple’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:26745: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Soffset_simple’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:26857: error: expected ‘)’ before ‘__pyx_v_space_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:26968: error: expected ‘)’ before ‘__pyx_v_space_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:27079: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_simple_extent_npoints’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:27191: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_simple_extent_type’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:27303: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sextent_copy’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:27415: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sset_extent_simple’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:27527: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sset_extent_none’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:27639: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_select_type’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:27751: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_select_npoints’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:27863: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_select_bounds’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:27975: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sselect_all’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:28087: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sselect_none’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:28199: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sselect_valid’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:28311: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_select_elem_npoints’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:28423: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_select_elem_pointlist’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:28535: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sselect_elements’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:28647: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_select_hyper_nblocks’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:28759: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sget_select_hyper_blocklist’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:28871: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sselect_hyperslab’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:28983: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sencode’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:29095: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Sdecode’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:29207: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tcreate’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:29319: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Topen’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:29431: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tcommit’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:29543: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tcommitted’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:29655: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tcopy’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:29767: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tequal’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:29879: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tlock’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:29991: error: expected ‘)’ before ‘__pyx_v_type_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:30103: error: expected ‘)’ before ‘__pyx_v_type_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:30215: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_super’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:30327: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tdetect_class’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:30439: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tclose’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:30551: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_native_type’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:30663: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tcommit2’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:30775: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tdecode’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:30887: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tencode’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:30999: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tfind’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:31111: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tconvert’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:31223: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tregister’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:31335: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tunregister’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:31447: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_size’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:31559: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_order’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:31671: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_order’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:31783: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_precision’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:31895: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_precision’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:32007: error: expected ‘)’ before ‘__pyx_v_type_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:32118: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_offset’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:32230: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_pad’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:32342: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_pad’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:32454: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_sign’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:32566: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_sign’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:32678: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_fields’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:32790: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_fields’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:32902: error: expected ‘)’ before ‘__pyx_v_type_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:33014: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_ebias’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:33126: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_norm’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:33238: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_norm’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:33350: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_inpad’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:33462: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_inpad’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:33574: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_cset’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:33686: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_cset’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:33798: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_strpad’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:33910: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_strpad’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:34022: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tvlen_create’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:34134: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tis_variable_str’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:34246: error: expected ‘)’ before ‘__pyx_v_type_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:34357: error: expected ‘)’ before ‘__pyx_v_type_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:34469: error: expected ‘)’ before ‘__pyx_v_type_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:34581: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_member_type’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:34693: error: expected ‘)’ before ‘__pyx_v_type_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:34804: error: expected ‘)’ before ‘__pyx_v_type_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:34915: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tinsert’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:35027: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tpack’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:35139: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tenum_create’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:35251: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tenum_insert’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:35363: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tenum_nameof’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:35475: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tenum_valueof’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:35587: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tget_member_value’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:35699: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tarray_create’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:35811: error: expected ‘)’ before ‘__pyx_v_type_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:35922: error: expected ‘)’ before ‘__pyx_v_type_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:36033: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Tset_tag’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:36145: error: expected ‘)’ before ‘__pyx_v_type_id’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:36257: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Zfilter_avail’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:36369: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5Zget_filter_info’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:36481: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5DSattach_scale’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:36610: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5DSdetach_scale’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:36739: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5DSis_attached’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:36868: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5DSset_scale’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:36997: error: expected ‘)’ before ‘__pyx_v_did’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:37125: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5DSset_label’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:37254: error: expected ‘)’ before ‘__pyx_v_did’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:37383: error: expected ‘)’ before ‘__pyx_v_did’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:37512: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5DSis_scale’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:37641: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pyx_f_4h5py_4defs_H5DSiterate_scales’
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c: In function ‘initdefs’:
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38017: error: ‘__pyx_f_4h5py_4defs_H5open’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38017: error: (Each undeclared identifier is reported only once
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38017: error: for each function it appears in.)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38018: error: ‘__pyx_f_4h5py_4defs_H5close’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38019: error: ‘__pyx_f_4h5py_4defs_H5get_libversion’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38020: error: ‘__pyx_f_4h5py_4defs_H5Acreate’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38021: error: ‘__pyx_f_4h5py_4defs_H5Aopen_idx’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38022: error: ‘__pyx_f_4h5py_4defs_H5Aopen_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38023: error: ‘__pyx_f_4h5py_4defs_H5Aclose’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38024: error: ‘__pyx_f_4h5py_4defs_H5Adelete’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38025: error: ‘__pyx_f_4h5py_4defs_H5Aread’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38026: error: ‘__pyx_f_4h5py_4defs_H5Awrite’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38027: error: ‘__pyx_f_4h5py_4defs_H5Aget_num_attrs’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38028: error: ‘__pyx_f_4h5py_4defs_H5Aget_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38029: error: ‘__pyx_f_4h5py_4defs_H5Aget_space’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38030: error: ‘__pyx_f_4h5py_4defs_H5Aget_type’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38031: error: ‘__pyx_f_4h5py_4defs_H5Aiterate’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38032: error: ‘__pyx_f_4h5py_4defs_H5Adelete_by_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38033: error: ‘__pyx_f_4h5py_4defs_H5Adelete_by_idx’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38034: error: ‘__pyx_f_4h5py_4defs_H5Acreate_by_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38035: error: ‘__pyx_f_4h5py_4defs_H5Aopen’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38036: error: ‘__pyx_f_4h5py_4defs_H5Aopen_by_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38037: error: ‘__pyx_f_4h5py_4defs_H5Aopen_by_idx’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38038: error: ‘__pyx_f_4h5py_4defs_H5Aexists_by_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38039: error: ‘__pyx_f_4h5py_4defs_H5Aexists’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38040: error: ‘__pyx_f_4h5py_4defs_H5Arename’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38041: error: ‘__pyx_f_4h5py_4defs_H5Arename_by_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38042: error: ‘__pyx_f_4h5py_4defs_H5Aget_info’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38043: error: ‘__pyx_f_4h5py_4defs_H5Aget_info_by_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38044: error: ‘__pyx_f_4h5py_4defs_H5Aget_info_by_idx’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38045: error: ‘__pyx_f_4h5py_4defs_H5Aiterate2’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38046: error: ‘__pyx_f_4h5py_4defs_H5Aget_storage_size’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38047: error: ‘__pyx_f_4h5py_4defs_H5Dcreate2’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38048: error: ‘__pyx_f_4h5py_4defs_H5Dcreate_anon’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38049: error: ‘__pyx_f_4h5py_4defs_H5Dopen’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38050: error: ‘__pyx_f_4h5py_4defs_H5Dopen2’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38051: error: ‘__pyx_f_4h5py_4defs_H5Dclose’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38052: error: ‘__pyx_f_4h5py_4defs_H5Dget_space’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38053: error: ‘__pyx_f_4h5py_4defs_H5Dget_space_status’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38054: error: ‘__pyx_f_4h5py_4defs_H5Dget_type’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38055: error: ‘__pyx_f_4h5py_4defs_H5Dget_create_plist’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38056: error: ‘__pyx_f_4h5py_4defs_H5Dget_access_plist’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38057: error: ‘__pyx_f_4h5py_4defs_H5Dget_offset’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38058: error: ‘__pyx_f_4h5py_4defs_H5Dget_storage_size’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38059: error: ‘__pyx_f_4h5py_4defs_H5Dread’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38060: error: ‘__pyx_f_4h5py_4defs_H5Dwrite’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38061: error: ‘__pyx_f_4h5py_4defs_H5Dextend’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38062: error: ‘__pyx_f_4h5py_4defs_H5Dfill’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38063: error: ‘__pyx_f_4h5py_4defs_H5Dvlen_get_buf_size’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38064: error: ‘__pyx_f_4h5py_4defs_H5Dvlen_reclaim’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38065: error: ‘__pyx_f_4h5py_4defs_H5Diterate’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38066: error: ‘__pyx_f_4h5py_4defs_H5Dset_extent’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38067: error: ‘__pyx_f_4h5py_4defs_H5Eset_auto’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38068: error: ‘__pyx_f_4h5py_4defs_H5Fcreate’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38069: error: ‘__pyx_f_4h5py_4defs_H5Fopen’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38070: error: ‘__pyx_f_4h5py_4defs_H5Fclose’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38071: error: ‘__pyx_f_4h5py_4defs_H5Fis_hdf5’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38072: error: ‘__pyx_f_4h5py_4defs_H5Fflush’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38073: error: ‘__pyx_f_4h5py_4defs_H5Freopen’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38074: error: ‘__pyx_f_4h5py_4defs_H5Fmount’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38075: error: ‘__pyx_f_4h5py_4defs_H5Funmount’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38076: error: ‘__pyx_f_4h5py_4defs_H5Fget_filesize’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38077: error: ‘__pyx_f_4h5py_4defs_H5Fget_create_plist’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38078: error: ‘__pyx_f_4h5py_4defs_H5Fget_access_plist’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38079: error: ‘__pyx_f_4h5py_4defs_H5Fget_freespace’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38080: error: ‘__pyx_f_4h5py_4defs_H5Fget_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38081: error: ‘__pyx_f_4h5py_4defs_H5Fget_obj_count’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38082: error: ‘__pyx_f_4h5py_4defs_H5Fget_obj_ids’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38083: error: ‘__pyx_f_4h5py_4defs_H5Fget_vfd_handle’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38084: error: ‘__pyx_f_4h5py_4defs_H5Fget_intent’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38085: error: ‘__pyx_f_4h5py_4defs_H5Fget_mdc_config’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38086: error: ‘__pyx_f_4h5py_4defs_H5Fget_mdc_hit_rate’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38087: error: ‘__pyx_f_4h5py_4defs_H5Fget_mdc_size’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38088: error: ‘__pyx_f_4h5py_4defs_H5Freset_mdc_hit_rate_stats’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38089: error: ‘__pyx_f_4h5py_4defs_H5Fset_mdc_config’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38090: error: ‘__pyx_f_4h5py_4defs_H5Gcreate’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38091: error: ‘__pyx_f_4h5py_4defs_H5Gopen’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38092: error: ‘__pyx_f_4h5py_4defs_H5Gclose’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38093: error: ‘__pyx_f_4h5py_4defs_H5Glink2’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38094: error: ‘__pyx_f_4h5py_4defs_H5Gunlink’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38095: error: ‘__pyx_f_4h5py_4defs_H5Gmove2’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38096: error: ‘__pyx_f_4h5py_4defs_H5Gget_num_objs’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38097: error: ‘__pyx_f_4h5py_4defs_H5Gget_objname_by_idx’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38098: error: ‘__pyx_f_4h5py_4defs_H5Gget_objtype_by_idx’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38099: error: ‘__pyx_f_4h5py_4defs_H5Giterate’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38100: error: ‘__pyx_f_4h5py_4defs_H5Gget_objinfo’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38101: error: ‘__pyx_f_4h5py_4defs_H5Gget_linkval’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38102: error: ‘__pyx_f_4h5py_4defs_H5Gset_comment’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38103: error: ‘__pyx_f_4h5py_4defs_H5Gget_comment’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38104: error: ‘__pyx_f_4h5py_4defs_H5Gcreate_anon’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38105: error: ‘__pyx_f_4h5py_4defs_H5Gcreate2’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38106: error: ‘__pyx_f_4h5py_4defs_H5Gopen2’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38107: error: ‘__pyx_f_4h5py_4defs_H5Gget_info’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38108: error: ‘__pyx_f_4h5py_4defs_H5Gget_info_by_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38109: error: ‘__pyx_f_4h5py_4defs_H5Gget_create_plist’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38110: error: ‘__pyx_f_4h5py_4defs_H5Iget_type’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38111: error: ‘__pyx_f_4h5py_4defs_H5Iget_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38112: error: ‘__pyx_f_4h5py_4defs_H5Iget_file_id’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38113: error: ‘__pyx_f_4h5py_4defs_H5Idec_ref’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38114: error: ‘__pyx_f_4h5py_4defs_H5Iget_ref’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38115: error: ‘__pyx_f_4h5py_4defs_H5Iinc_ref’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38116: error: ‘__pyx_f_4h5py_4defs_H5Iis_valid’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38117: error: ‘__pyx_f_4h5py_4defs_H5Lmove’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38118: error: ‘__pyx_f_4h5py_4defs_H5Lcopy’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38119: error: ‘__pyx_f_4h5py_4defs_H5Lcreate_hard’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38120: error: ‘__pyx_f_4h5py_4defs_H5Lcreate_soft’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38121: error: ‘__pyx_f_4h5py_4defs_H5Ldelete’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38122: error: ‘__pyx_f_4h5py_4defs_H5Ldelete_by_idx’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38123: error: ‘__pyx_f_4h5py_4defs_H5Lget_val’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38124: error: ‘__pyx_f_4h5py_4defs_H5Lget_val_by_idx’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38125: error: ‘__pyx_f_4h5py_4defs_H5Lexists’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38126: error: ‘__pyx_f_4h5py_4defs_H5Lget_info’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38127: error: ‘__pyx_f_4h5py_4defs_H5Lget_info_by_idx’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38128: error: ‘__pyx_f_4h5py_4defs_H5Lget_name_by_idx’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38129: error: ‘__pyx_f_4h5py_4defs_H5Literate’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38130: error: ‘__pyx_f_4h5py_4defs_H5Literate_by_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38131: error: ‘__pyx_f_4h5py_4defs_H5Lvisit’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38132: error: ‘__pyx_f_4h5py_4defs_H5Lvisit_by_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38133: error: ‘__pyx_f_4h5py_4defs_H5Lunpack_elink_val’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38134: error: ‘__pyx_f_4h5py_4defs_H5Lcreate_external’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38135: error: ‘__pyx_f_4h5py_4defs_H5Oopen’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38136: error: ‘__pyx_f_4h5py_4defs_H5Oopen_by_addr’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38137: error: ‘__pyx_f_4h5py_4defs_H5Oopen_by_idx’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38138: error: ‘__pyx_f_4h5py_4defs_H5Oget_info’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38139: error: ‘__pyx_f_4h5py_4defs_H5Oget_info_by_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38140: error: ‘__pyx_f_4h5py_4defs_H5Oget_info_by_idx’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38141: error: ‘__pyx_f_4h5py_4defs_H5Olink’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38142: error: ‘__pyx_f_4h5py_4defs_H5Ocopy’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38143: error: ‘__pyx_f_4h5py_4defs_H5Oincr_refcount’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38144: error: ‘__pyx_f_4h5py_4defs_H5Odecr_refcount’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38145: error: ‘__pyx_f_4h5py_4defs_H5Oset_comment’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38146: error: ‘__pyx_f_4h5py_4defs_H5Oset_comment_by_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38147: error: ‘__pyx_f_4h5py_4defs_H5Oget_comment’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38148: error: ‘__pyx_f_4h5py_4defs_H5Oget_comment_by_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38149: error: ‘__pyx_f_4h5py_4defs_H5Ovisit’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38150: error: ‘__pyx_f_4h5py_4defs_H5Ovisit_by_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38151: error: ‘__pyx_f_4h5py_4defs_H5Oclose’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38152: error: ‘__pyx_f_4h5py_4defs_H5Pcreate’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38153: error: ‘__pyx_f_4h5py_4defs_H5Pcopy’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38154: error: ‘__pyx_f_4h5py_4defs_H5Pget_class’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38155: error: ‘__pyx_f_4h5py_4defs_H5Pclose’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38156: error: ‘__pyx_f_4h5py_4defs_H5Pequal’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38157: error: ‘__pyx_f_4h5py_4defs_H5Pclose_class’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38158: error: ‘__pyx_f_4h5py_4defs_H5Pget_version’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38159: error: ‘__pyx_f_4h5py_4defs_H5Pset_userblock’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38160: error: ‘__pyx_f_4h5py_4defs_H5Pget_userblock’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38161: error: ‘__pyx_f_4h5py_4defs_H5Pset_sizes’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38162: error: ‘__pyx_f_4h5py_4defs_H5Pget_sizes’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38163: error: ‘__pyx_f_4h5py_4defs_H5Pset_sym_k’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38164: error: ‘__pyx_f_4h5py_4defs_H5Pget_sym_k’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38165: error: ‘__pyx_f_4h5py_4defs_H5Pset_istore_k’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38166: error: ‘__pyx_f_4h5py_4defs_H5Pget_istore_k’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38167: error: ‘__pyx_f_4h5py_4defs_H5Pset_fclose_degree’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38168: error: ‘__pyx_f_4h5py_4defs_H5Pget_fclose_degree’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38169: error: ‘__pyx_f_4h5py_4defs_H5Pset_fapl_core’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38170: error: ‘__pyx_f_4h5py_4defs_H5Pget_fapl_core’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38171: error: ‘__pyx_f_4h5py_4defs_H5Pset_fapl_family’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38172: error: ‘__pyx_f_4h5py_4defs_H5Pget_fapl_family’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38173: error: ‘__pyx_f_4h5py_4defs_H5Pset_family_offset’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38174: error: ‘__pyx_f_4h5py_4defs_H5Pget_family_offset’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38175: error: ‘__pyx_f_4h5py_4defs_H5Pset_fapl_log’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38176: error: ‘__pyx_f_4h5py_4defs_H5Pset_fapl_multi’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38177: error: ‘__pyx_f_4h5py_4defs_H5Pset_cache’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38178: error: ‘__pyx_f_4h5py_4defs_H5Pget_cache’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38179: error: ‘__pyx_f_4h5py_4defs_H5Pset_fapl_sec2’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38180: error: ‘__pyx_f_4h5py_4defs_H5Pset_fapl_stdio’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38181: error: ‘__pyx_f_4h5py_4defs_H5Pget_driver’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38182: error: ‘__pyx_f_4h5py_4defs_H5Pget_mdc_config’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38183: error: ‘__pyx_f_4h5py_4defs_H5Pset_mdc_config’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38184: error: ‘__pyx_f_4h5py_4defs_H5Pset_layout’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38185: error: ‘__pyx_f_4h5py_4defs_H5Pget_layout’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38186: error: ‘__pyx_f_4h5py_4defs_H5Pset_chunk’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38187: error: ‘__pyx_f_4h5py_4defs_H5Pget_chunk’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38188: error: ‘__pyx_f_4h5py_4defs_H5Pset_deflate’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38189: error: ‘__pyx_f_4h5py_4defs_H5Pset_fill_value’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38190: error: ‘__pyx_f_4h5py_4defs_H5Pget_fill_value’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38191: error: ‘__pyx_f_4h5py_4defs_H5Pfill_value_defined’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38192: error: ‘__pyx_f_4h5py_4defs_H5Pset_fill_time’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38193: error: ‘__pyx_f_4h5py_4defs_H5Pget_fill_time’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38194: error: ‘__pyx_f_4h5py_4defs_H5Pset_alloc_time’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38195: error: ‘__pyx_f_4h5py_4defs_H5Pget_alloc_time’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38196: error: ‘__pyx_f_4h5py_4defs_H5Pset_filter’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38197: error: ‘__pyx_f_4h5py_4defs_H5Pall_filters_avail’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38198: error: ‘__pyx_f_4h5py_4defs_H5Pget_nfilters’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38199: error: ‘__pyx_f_4h5py_4defs_H5Pget_filter’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38200: error: ‘__pyx_f_4h5py_4defs_H5Pget_filter_by_id’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38201: error: ‘__pyx_f_4h5py_4defs_H5Pmodify_filter’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38202: error: ‘__pyx_f_4h5py_4defs_H5Premove_filter’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38203: error: ‘__pyx_f_4h5py_4defs_H5Pset_fletcher32’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38204: error: ‘__pyx_f_4h5py_4defs_H5Pset_shuffle’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38205: error: ‘__pyx_f_4h5py_4defs_H5Pset_szip’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38206: error: ‘__pyx_f_4h5py_4defs_H5Pset_scaleoffset’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38207: error: ‘__pyx_f_4h5py_4defs_H5Pset_edc_check’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38208: error: ‘__pyx_f_4h5py_4defs_H5Pget_edc_check’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38209: error: ‘__pyx_f_4h5py_4defs_H5Pset_chunk_cache’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38210: error: ‘__pyx_f_4h5py_4defs_H5Pget_chunk_cache’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38211: error: ‘__pyx_f_4h5py_4defs_H5Pset_sieve_buf_size’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38212: error: ‘__pyx_f_4h5py_4defs_H5Pget_sieve_buf_size’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38213: error: ‘__pyx_f_4h5py_4defs_H5Pset_nlinks’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38214: error: ‘__pyx_f_4h5py_4defs_H5Pget_nlinks’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38215: error: ‘__pyx_f_4h5py_4defs_H5Pset_elink_prefix’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38216: error: ‘__pyx_f_4h5py_4defs_H5Pget_elink_prefix’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38217: error: ‘__pyx_f_4h5py_4defs_H5Pget_elink_fapl’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38218: error: ‘__pyx_f_4h5py_4defs_H5Pset_elink_fapl’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38219: error: ‘__pyx_f_4h5py_4defs_H5Pset_create_intermediate_group’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38220: error: ‘__pyx_f_4h5py_4defs_H5Pget_create_intermediate_group’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38221: error: ‘__pyx_f_4h5py_4defs_H5Pset_copy_object’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38222: error: ‘__pyx_f_4h5py_4defs_H5Pget_copy_object’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38223: error: ‘__pyx_f_4h5py_4defs_H5Pset_char_encoding’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38224: error: ‘__pyx_f_4h5py_4defs_H5Pget_char_encoding’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38225: error: ‘__pyx_f_4h5py_4defs_H5Pset_obj_track_times’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38226: error: ‘__pyx_f_4h5py_4defs_H5Pget_obj_track_times’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38227: error: ‘__pyx_f_4h5py_4defs_H5Pset_local_heap_size_hint’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38228: error: ‘__pyx_f_4h5py_4defs_H5Pget_local_heap_size_hint’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38229: error: ‘__pyx_f_4h5py_4defs_H5Pset_link_phase_change’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38230: error: ‘__pyx_f_4h5py_4defs_H5Pget_link_phase_change’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38231: error: ‘__pyx_f_4h5py_4defs_H5Pset_est_link_info’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38232: error: ‘__pyx_f_4h5py_4defs_H5Pget_est_link_info’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38233: error: ‘__pyx_f_4h5py_4defs_H5Pset_link_creation_order’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38234: error: ‘__pyx_f_4h5py_4defs_H5Pget_link_creation_order’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38235: error: ‘__pyx_f_4h5py_4defs_H5Pset_libver_bounds’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38236: error: ‘__pyx_f_4h5py_4defs_H5Pget_libver_bounds’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38237: error: ‘__pyx_f_4h5py_4defs_H5Pset_alignment’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38238: error: ‘__pyx_f_4h5py_4defs_H5Pget_alignment’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38239: error: ‘__pyx_f_4h5py_4defs_H5Rcreate’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38240: error: ‘__pyx_f_4h5py_4defs_H5Rdereference’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38241: error: ‘__pyx_f_4h5py_4defs_H5Rget_region’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38242: error: ‘__pyx_f_4h5py_4defs_H5Rget_obj_type’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38243: error: ‘__pyx_f_4h5py_4defs_H5Rget_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38244: error: ‘__pyx_f_4h5py_4defs_H5Screate’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38245: error: ‘__pyx_f_4h5py_4defs_H5Scopy’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38246: error: ‘__pyx_f_4h5py_4defs_H5Sclose’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38247: error: ‘__pyx_f_4h5py_4defs_H5Screate_simple’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38248: error: ‘__pyx_f_4h5py_4defs_H5Sis_simple’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38249: error: ‘__pyx_f_4h5py_4defs_H5Soffset_simple’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38250: error: ‘__pyx_f_4h5py_4defs_H5Sget_simple_extent_ndims’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38251: error: ‘__pyx_f_4h5py_4defs_H5Sget_simple_extent_dims’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38252: error: ‘__pyx_f_4h5py_4defs_H5Sget_simple_extent_npoints’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38253: error: ‘__pyx_f_4h5py_4defs_H5Sget_simple_extent_type’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38254: error: ‘__pyx_f_4h5py_4defs_H5Sextent_copy’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38255: error: ‘__pyx_f_4h5py_4defs_H5Sset_extent_simple’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38256: error: ‘__pyx_f_4h5py_4defs_H5Sset_extent_none’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38257: error: ‘__pyx_f_4h5py_4defs_H5Sget_select_type’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38258: error: ‘__pyx_f_4h5py_4defs_H5Sget_select_npoints’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38259: error: ‘__pyx_f_4h5py_4defs_H5Sget_select_bounds’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38260: error: ‘__pyx_f_4h5py_4defs_H5Sselect_all’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38261: error: ‘__pyx_f_4h5py_4defs_H5Sselect_none’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38262: error: ‘__pyx_f_4h5py_4defs_H5Sselect_valid’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38263: error: ‘__pyx_f_4h5py_4defs_H5Sget_select_elem_npoints’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38264: error: ‘__pyx_f_4h5py_4defs_H5Sget_select_elem_pointlist’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38265: error: ‘__pyx_f_4h5py_4defs_H5Sselect_elements’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38266: error: ‘__pyx_f_4h5py_4defs_H5Sget_select_hyper_nblocks’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38267: error: ‘__pyx_f_4h5py_4defs_H5Sget_select_hyper_blocklist’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38268: error: ‘__pyx_f_4h5py_4defs_H5Sselect_hyperslab’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38269: error: ‘__pyx_f_4h5py_4defs_H5Sencode’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38270: error: ‘__pyx_f_4h5py_4defs_H5Sdecode’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38271: error: ‘__pyx_f_4h5py_4defs_H5Tcreate’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38272: error: ‘__pyx_f_4h5py_4defs_H5Topen’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38273: error: ‘__pyx_f_4h5py_4defs_H5Tcommit’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38274: error: ‘__pyx_f_4h5py_4defs_H5Tcommitted’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38275: error: ‘__pyx_f_4h5py_4defs_H5Tcopy’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38276: error: ‘__pyx_f_4h5py_4defs_H5Tequal’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38277: error: ‘__pyx_f_4h5py_4defs_H5Tlock’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38278: error: ‘__pyx_f_4h5py_4defs_H5Tget_class’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38279: error: ‘__pyx_f_4h5py_4defs_H5Tget_size’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38280: error: ‘__pyx_f_4h5py_4defs_H5Tget_super’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38281: error: ‘__pyx_f_4h5py_4defs_H5Tdetect_class’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38282: error: ‘__pyx_f_4h5py_4defs_H5Tclose’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38283: error: ‘__pyx_f_4h5py_4defs_H5Tget_native_type’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38284: error: ‘__pyx_f_4h5py_4defs_H5Tcommit2’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38285: error: ‘__pyx_f_4h5py_4defs_H5Tdecode’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38286: error: ‘__pyx_f_4h5py_4defs_H5Tencode’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38287: error: ‘__pyx_f_4h5py_4defs_H5Tfind’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38288: error: ‘__pyx_f_4h5py_4defs_H5Tconvert’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38289: error: ‘__pyx_f_4h5py_4defs_H5Tregister’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38290: error: ‘__pyx_f_4h5py_4defs_H5Tunregister’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38291: error: ‘__pyx_f_4h5py_4defs_H5Tset_size’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38292: error: ‘__pyx_f_4h5py_4defs_H5Tget_order’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38293: error: ‘__pyx_f_4h5py_4defs_H5Tset_order’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38294: error: ‘__pyx_f_4h5py_4defs_H5Tget_precision’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38295: error: ‘__pyx_f_4h5py_4defs_H5Tset_precision’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38296: error: ‘__pyx_f_4h5py_4defs_H5Tget_offset’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38297: error: ‘__pyx_f_4h5py_4defs_H5Tset_offset’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38298: error: ‘__pyx_f_4h5py_4defs_H5Tget_pad’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38299: error: ‘__pyx_f_4h5py_4defs_H5Tset_pad’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38300: error: ‘__pyx_f_4h5py_4defs_H5Tget_sign’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38301: error: ‘__pyx_f_4h5py_4defs_H5Tset_sign’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38302: error: ‘__pyx_f_4h5py_4defs_H5Tget_fields’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38303: error: ‘__pyx_f_4h5py_4defs_H5Tset_fields’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38304: error: ‘__pyx_f_4h5py_4defs_H5Tget_ebias’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38305: error: ‘__pyx_f_4h5py_4defs_H5Tset_ebias’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38306: error: ‘__pyx_f_4h5py_4defs_H5Tget_norm’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38307: error: ‘__pyx_f_4h5py_4defs_H5Tset_norm’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38308: error: ‘__pyx_f_4h5py_4defs_H5Tget_inpad’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38309: error: ‘__pyx_f_4h5py_4defs_H5Tset_inpad’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38310: error: ‘__pyx_f_4h5py_4defs_H5Tget_cset’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38311: error: ‘__pyx_f_4h5py_4defs_H5Tset_cset’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38312: error: ‘__pyx_f_4h5py_4defs_H5Tget_strpad’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38313: error: ‘__pyx_f_4h5py_4defs_H5Tset_strpad’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38314: error: ‘__pyx_f_4h5py_4defs_H5Tvlen_create’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38315: error: ‘__pyx_f_4h5py_4defs_H5Tis_variable_str’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38316: error: ‘__pyx_f_4h5py_4defs_H5Tget_nmembers’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38317: error: ‘__pyx_f_4h5py_4defs_H5Tget_member_class’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38318: error: ‘__pyx_f_4h5py_4defs_H5Tget_member_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38319: error: ‘__pyx_f_4h5py_4defs_H5Tget_member_type’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38320: error: ‘__pyx_f_4h5py_4defs_H5Tget_member_offset’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38321: error: ‘__pyx_f_4h5py_4defs_H5Tget_member_index’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38322: error: ‘__pyx_f_4h5py_4defs_H5Tinsert’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38323: error: ‘__pyx_f_4h5py_4defs_H5Tpack’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38324: error: ‘__pyx_f_4h5py_4defs_H5Tenum_create’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38325: error: ‘__pyx_f_4h5py_4defs_H5Tenum_insert’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38326: error: ‘__pyx_f_4h5py_4defs_H5Tenum_nameof’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38327: error: ‘__pyx_f_4h5py_4defs_H5Tenum_valueof’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38328: error: ‘__pyx_f_4h5py_4defs_H5Tget_member_value’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38329: error: ‘__pyx_f_4h5py_4defs_H5Tarray_create’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38330: error: ‘__pyx_f_4h5py_4defs_H5Tget_array_ndims’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38331: error: ‘__pyx_f_4h5py_4defs_H5Tget_array_dims’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38332: error: ‘__pyx_f_4h5py_4defs_H5Tset_tag’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38333: error: ‘__pyx_f_4h5py_4defs_H5Tget_tag’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38334: error: ‘__pyx_f_4h5py_4defs_H5Zfilter_avail’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38335: error: ‘__pyx_f_4h5py_4defs_H5Zget_filter_info’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38336: error: ‘__pyx_f_4h5py_4defs_H5DSattach_scale’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38337: error: ‘__pyx_f_4h5py_4defs_H5DSdetach_scale’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38338: error: ‘__pyx_f_4h5py_4defs_H5DSis_attached’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38339: error: ‘__pyx_f_4h5py_4defs_H5DSset_scale’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38340: error: ‘__pyx_f_4h5py_4defs_H5DSget_num_scales’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38341: error: ‘__pyx_f_4h5py_4defs_H5DSset_label’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38342: error: ‘__pyx_f_4h5py_4defs_H5DSget_label’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38343: error: ‘__pyx_f_4h5py_4defs_H5DSget_scale_name’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38344: error: ‘__pyx_f_4h5py_4defs_H5DSis_scale’ undeclared (first use in this function)
+
+/tmp/pip-build-ctataru5/h5py/h5py/defs.c:38345: error: ‘__pyx_f_4h5py_4defs_H5DSiterate_scales’ undeclared (first use in this function)
+
+error: command 'gcc' failed with exit status 1
+
+----------------------------------------
+Command /usr/bin/python -c "import setuptools;__file__='/tmp/pip-build-ctataru5/h5py/setup.py';exec(compile(open(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-4eDFZj-record/install-record.txt --single-version-externally-managed --user failed with error code 1 in /tmp/pip-build-ctataru5/h5py
+Storing complete log in /home/ctataru5/.pip/pip.log
